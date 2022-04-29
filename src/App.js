@@ -13,7 +13,7 @@ class App extends React.Component {
   async componentDidMount() {
     //fetch the data from api
     const fetchedData = await fetchData();
-    //set the state with fetchedData setState({data: fetchedData})
+    //set the state with fetchedData
     this.setState({data: fetchedData});
   }
 
@@ -22,19 +22,19 @@ class App extends React.Component {
     //fetch the country
     const fetchedcountryData = await fetchData(country);
     console.log(fetchedcountryData);
-    //set the state with received country name
+    //set the state with received country's result
     this.setState({ data: fetchedcountryData, country: country });
 
   }
 
   render() {
-    const { data } = this.state;
+    const { data, country } = this.state;
     return (
       <div className={styles.container}>
         <h1>Covid Traker</h1>
         <Cards data={data}/>
         <CountryPicker handleCountryChange={this.handleCountryChange}/>
-        <Chart />
+        <Chart data={data} country={country}/>
         
       </div>
     );
