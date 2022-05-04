@@ -11,7 +11,6 @@ Used ChartJs for data visualization and MUI core for styling.
  * axios: ^0.27.2
  * chart.js: ^3.7.1
  * classnames: ^2.3.1
- * react": ^16.1.0
  * react-chartjs-2: ^4.1.0
  * react-countup: ^6.2.0
 
