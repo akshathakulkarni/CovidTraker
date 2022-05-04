@@ -7,7 +7,7 @@ Used ChartJs for data visualization and MUI core for styling.
 !["Covid_Tracker"](https://github.com/akshathakulkarni/covid_traker/blob/main/docs/covid_tracker.png?raw=true)
 
 # Dependencies:
- * @material-ui/core: ^4.12.4
+ * material-ui/core: ^4.12.4
  * axios: ^0.27.2
  * chart.js: ^3.7.1
  * classnames: ^2.3.1
